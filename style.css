@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+}
+
+canvas {
+  background: black;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.ik {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.navbar {
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha value (fourth parameter) for transparency */
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.head {
+  --font-selector: Q1VTVE9NO0dUIFdhbHNoZWltIEZyYW1lciBNZWRpdW0=;
+  --framer-font-family: "GT Walsheim Framer Medium", "GT Walsheim Framer Medium Placeholder", sans-serif;
+  --framer-font-size: 50px;
+  --framer-text-alignment: center;
+  --framer-text-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 2;
+  font-size: larger;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.head .hea {
+  font-family: var(--framer-font-family);
+  font-size: var(--framer-font-size);
+  letter-spacing: var(--framer-letter-spacing);
+  line-height: var(--framer-line-height);
+  text-align: var(--framer-text-alignment);
+  color: var(--framer-text-color);
+}
+
+
+.l1 {
+  margin: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fefefe;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: rgb(40, 131, 201);
+  color: black;
+}
+#explore1 {
+  background-color: #f4f5f7;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease; /* Adding a smooth transition */
+  border: none;
+  cursor: pointer;
+}
+
+#explore1:hover {
+  background-color: #41a3d4; 
+  transform: translateX(10px); 
+
+}
+.ailogo{
+  height: 100px;
+  width : 120px;
+  margin-bottom: 10px;
+}
+.col {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+  background-color: rgba(123, 93, 93, 0.567);
+  margin: 2px;
+  width: 400px;
+  margin-top: 50px;
+}
+.trends{
+  background-image: url("1_20240226_113714_0000.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
