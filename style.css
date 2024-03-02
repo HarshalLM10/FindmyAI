@@ -58,6 +58,9 @@ canvas {
   color: var(--framer-text-color);
 }
 
+#t2{
+  text-align: start;
+}
 
 .l1 {
   margin: 50px;
@@ -101,23 +104,38 @@ canvas {
   transform: translateX(10px); 
 
 }
+
+.row1{
+  padding-top: 10px;
+  border: white solid 2px;
+}
+#dropdownd{
+  background-color: black;
+  color: white;
+  width: 90px;
+}
+#optd{
+  color: white;
+}
+.exb{
+  margin-top: 15px;
+}
 .ailogo{
   height: 100px;
   width : 120px;
   margin-bottom: 10px;
-}
+} 
 .col {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
-  background-color: rgba(123, 93, 93, 0.567);
-  margin: 2px;
+  margin: 10px;
   width: 400px;
   margin-top: 50px;
 }
 .trends{
-  background-image: url("1_20240226_113714_0000.png");
+  /* background-image: url("1_20240226_113714_0000.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   height: 500px;
 }
 
