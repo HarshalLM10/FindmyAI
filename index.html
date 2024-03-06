@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Akash mc</title>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -18,8 +19,15 @@
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li>
+        <select id="dropdownd" name="dropdownd">
+            <option id="optd" value="option0">Domains</option>
+            <option id="optd"value="option1">Writing and Content Creation</option>
+            <option id="optd" value="option2">Coding and Development</option>
+            <option id="optd" value="option3">Digital Marketing</option>
+            <option id="optd" value="option3">More</option>
+        </select></li>
+      <li><a href="#">Suggestions</a></li>
       <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
           viewBox="0 0 16 16">
           <path
@@ -30,42 +38,96 @@
   <div class="head">
     <h1 class="hea">FULL AI TOOLS LIST BY CATEGORIES</h1><br>
     <h1 class="hea">Best AI Tools Directory </h1><br>
-    <button id="explore1">Explore More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-    </svg></button>
+    <button id="explore1">Explore More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+        fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+      </svg></button>
   </div>
-  <div class="container text-center">
-    <div class="row g-2">
-      <div class="col-6">
-        <div class="p-3"><h1>Trendings</h1></div>
-      </div>
-      <div class="col-6">
-        <div class="p-3"><button>Explore more</button></div>
-      </div>
+
+
+  <!-- trending -->
+  <div class="trending">
+    <div class="container-md trends">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col" id="one">
+                    <p id="twop"> Trending AI's</p>
+                </div>
+                <div class="col" id="tw0">
+                    <button id="eb">Explore</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="trends">
     <div class="container text-center">
-      <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
-        <div class="col">
-          <div class="p-3"><svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"><path d="M 44.65 33.992 L 95.35 33.992 L 95.35 59.341 L 70 59.341 Z M 44.65 59.341 L 70 59.341 L 95.35 84.691 L 44.65 84.691 Z M 44.65 84.691 L 70 84.691 L 70 110.041 Z" fill="rgb(0, 0, 0)"></path></svg><br>
-            <h2>Farmer AI</h2>
+        <div class="row">
+          <div class="col col2">
+            <img src="pics/download.jpg" id="imgt">
+            <h3>Streetbeat</h3>
+            <p>Streetbeat is at the forefront of financial technology innovation, offering personalized investment solutions through its AI-powered financial advisor. Streetbeat aims to make investing accessible to all, revolutionizing how individuals manage their financial futures. The app’s interface allows you to ask questions and tap into hundreds of data sources, in an easy conversational way, like talking to a financial advisor</p><br>
+            <p id="special"><u>Trial from 15$/month</u></p>
+            <button id="eb">Explore tool</button>
+          </div>
+          <div class="col col2">
+            <img src="pics/download (1).png" id="imgt">
+            <h3>Camp</h3>
+            <p>Camp is a specialized platform dedicated to enhancing SEO performance through the creation of high-performing SEO blog content. It stands out by leveraging multi LLM solutions and models trained on SEO-ranked data for each stage of blog generation. </p><br>
+            <p id="special"><u>Freeuse</u></p>
+            <button id="eb">Explore tool</button>
+          </div>
+          <div class="col col2">
+            <img src="pics/download (2).png" id="imgt">
+            <h3>Consensus</h3>
+            <p>Your AI Research Assistant. Search 200M academic papers from Consensus, get science-based answers, and draft content with accurate citations.</p><br>
+            <p id="special"><u>Freeuse</u></p>
+            <button id="eb">Explore tool</button>
           </div>
         </div>
-        <div class="col">
-          <div class="p-3"><div class="p-3"><img src="909_adobe.jpg" class="ailogo"><br>
-            <h2>Adobe AI</h2>
-          </div></div>
-        </div>
-        <div class="col">
-          <div class="p-3"><div class="p-3"><img src="Rytr-Lifetime-Deal-on-Appsumo.jpg" class="ailogo"><br>
-            <h2>Farmer AI</h2>
-          </div></div>
-        </div>
       </div>
+</div>
+
+
+  <!-- ------------------Footer----------- -->
+
+  <div class="footer">
+    <div class="containerz">
+        <div class="rowk">
+            <div class="footer-col-1">
+                <h3> Download our app</h3>
+                <p>Download our app for android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="pics/play-store.png" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="pics/" >
+                <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3> Useful links</h3>
+                <ul>
+                    <li>Copouns</li>
+                    <li>Blog post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>                        
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3> Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>instagram</li>
+                    <li>Youtube</li>                        
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> Copyright 2023 - Harshal</p>
     </div>
-  </div>
-  <script>
+ </div>
+    <script>
     (function () {
       var c = document.getElementById("c"),
         ctx = c.getContext("2d");
@@ -115,11 +177,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
