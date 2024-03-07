@@ -10,6 +10,7 @@ canvas {
   top: 0;
   left: 0;
   z-index: 1;
+  border: 5px solid white;
 }
 
 .ik {
@@ -32,8 +33,7 @@ canvas {
 }
 
 .head {
-  --font-selector: Q1VTVE9NO0dUIFdhbHNoZWltIEZyYW1lciBNZWRpdW0=;
-  --framer-font-family: "GT Walsheim Framer Medium", "GT Walsheim Framer Medium Placeholder", sans-serif;
+  font-family: sans-serif;
   --framer-font-size: 50px;
   --framer-text-alignment: center;
   --framer-text-color: rgb(255, 255, 255);
@@ -128,13 +128,49 @@ canvas {
   margin-bottom: 10px;
 } 
 
+/* poster */
+.pos {
+  height: 600px;
+  display: flex;
+  border: 5px solid #0947b3;
+  margin-top: 10px;
+}
+
+.col3 {
+  height: 560px;
+}
+.col3 img{
+  height: 550px;
+  animation: slideLeft 1s ease-in-out;
+}
+.col3-1{
+  height: 560px;
+  justify-content: start;
+  align-items: start;
+}
+
+.col3c{
+  justify-content: start;
+  align-items: start;
+}
+
+@keyframes slideLeft {
+  from {
+      transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  to {
+      transform: translateX(0); /* Move to the original position */
+  }
+}
+
+
+
 /* trends */
 .trends {
   background-color: rgb(0, 0, 0);
   margin-top: 29px;
   border: 5px solid white;
   max-width: 80%;
-
 }
 
 .container-md {
@@ -206,6 +242,7 @@ canvas {
 #eb:hover{
   background-color: black;
   color: white;
+  border: 2px solid #0947b3;
 }
 #ec:hover{
   background-color: #0947b3;
