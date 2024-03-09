@@ -1,3 +1,6 @@
+
+
+
 (function(){
 	
 	var c = document.getElementById("c"),
@@ -47,6 +50,5 @@
 	draw();
 	
 }());
-
 
 
