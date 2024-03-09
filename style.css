@@ -498,3 +498,42 @@ body {
     transform: translateY(0);
   }
 }
+
+
+
+/* domains */
+
+/* your-style.css */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px; /* Adjust the max-width to make the dropdown wider */
+  margin: auto;
+}
+
+.accordion-section {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.accordion-header {
+  background-color: #0947b3;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+#otherpageh2{
+  align-content: center;
+  justify-content: center;
+  margin: 10px 0;
+  border: 5px solid white;
+  margin-bottom: 50px;
+}
