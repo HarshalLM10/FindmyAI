@@ -206,6 +206,7 @@ canvas {
   padding: 6px;
   transition: 0.5s;
   margin: 5px;
+  color: black;
   background-color: rgb(255, 255, 255);
 }
 #ec{

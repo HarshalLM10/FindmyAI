@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Suggestion Box</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: black;
+            color: white;
+        }
+        .box{
+            background-color: blue;
+            width: 600px;
+            margin: auto;
+            padding: 10px;
+            border: 5px solid white;
         }
 
         h1 {
@@ -30,6 +40,13 @@
             margin-bottom: 16px;
             box-sizing: border-box;
         }
+        .sugg{
+            border: 5px solid white;
+            width: 610px;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
 
         textarea {
             resize: vertical;
@@ -51,9 +68,9 @@
     </style>
 </head>
 <body>
-
-    <h1>Suggestion Box</h1>
-
+     <div class="sugg"><h1>Suggestion Box</h1></div>
+    
+    <div class="box">
     <form action="#" method="post" id="suggestionForm">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
@@ -64,9 +81,9 @@
         <label for="suggestion">Your Suggestion:</label>
         <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
 
-        <button type="submit">Submit Suggestion</button>
+        <button type="submit" class="eb">Submit Suggestion</button>
     </form>
-
+</div>
     
 
     <script>
