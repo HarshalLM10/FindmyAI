@@ -536,7 +536,26 @@ body {
 #otherpageh2{
   align-content: center;
   justify-content: center;
+  color: white;
   margin: 10px 0;
   border: 5px solid white;
-  margin-bottom: 50px;
+}
+
+.col3c {
+  background: linear-gradient(90deg, #000, #fff, #000);
+  color: transparent; /* Set text color to transparent */
+  -webkit-background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 3s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
