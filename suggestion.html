@@ -13,7 +13,7 @@
             color: white;
         }
         .box{
-            background-color: blue;
+            background-color: #0947b3;
             width: 600px;
             margin: auto;
             padding: 10px;
@@ -39,6 +39,11 @@
             padding: 8px;
             margin-bottom: 16px;
             box-sizing: border-box;
+        }
+        .sugge{
+            position: absolute;
+            z-index: 2;
+            margin: 0 25% ;
         }
         .sugg{
             border: 5px solid white;
@@ -68,6 +73,8 @@
     </style>
 </head>
 <body>
+    <canvas id="c"></canvas>
+    <div class="sugge">
      <div class="sugg"><h1>Suggestion Box</h1></div>
     
     <div class="box">
@@ -84,6 +91,9 @@
         <button type="submit" class="eb">Submit Suggestion</button>
     </form>
 </div>
+</div>
+
+
     
 
     <script>
@@ -94,6 +104,56 @@
             alert('Suggestion submitted!');
         });
     </script>
+    <script>
+        (function () {
+          var c = document.getElementById("c"),
+            ctx = c.getContext("2d");
+    
+          c.width = innerWidth;
+          c.height = innerHeight;
+    
+          var lines = [],
+            maxSpeed = 0,
+            spacing = 5,
+            xSpacing = 0,
+            n = innerWidth / spacing,
+            colors = ["#0947b3", "6a96e2", "white", "grey"],
+            i;
+    
+          for (i = 0; i < n; i++) {
+            xSpacing += spacing;
+            lines.push({
+              x: xSpacing,
+              y: Math.round(Math.random() * c.height),
+              width: 2,
+              height: Math.round(Math.random() * (innerHeight / 10)),
+              speed: Math.random() * maxSpeed + 1,
+              color: colors[Math.floor(Math.random() * colors.length)]
+            });
+          }
+    
+          function draw() {
+            var i;
+            ctx.clearRect(0, 0, c.width, c.height);
+    
+            for (i = 0; i < n; i++) {
+              ctx.fillStyle = lines[i].color;
+              ctx.fillRect(lines[i].x, lines[i].y, lines[i].width, lines[i].height);
+              lines[i].y += lines[i].speed;
+    
+              if (lines[i].y > c.height)
+                lines[i].y = 0 - lines[i].height;
+            }
+    
+            requestAnimationFrame(draw);
+          }
+    
+          draw();
+        }());
+    
+    
+    
+      </script>
 
 </body>
 </html>
