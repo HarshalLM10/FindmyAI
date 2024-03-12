@@ -296,6 +296,31 @@ canvas {
   color: white;
 }
 
+/* other ai button hover */
+        
+        .otherbutton {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 16px;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+          background-color: #007BFF;
+          transition: background-color 0.3s ease;
+          align-items: center;
+      }
+      .otherbutton:hover {
+        background-color: #011e3c;
+    }
+
+
+
+
+
 @media (min-width: 768px) {
   .col {
     flex: 0 0 48%; 
@@ -612,7 +637,8 @@ body {
   align-content: center;
   justify-content: center;
   color: white;
-  margin: 10px 0;
+  margin: 40px 0;
+  
   border: 5px solid white;
 }
 
