@@ -119,6 +119,19 @@ canvas {
   margin-right: 15px;
 }
 
+.op{
+  border-radius: 30%;
+  background-color: #0947b3;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff; /* Choose your preferred text color */
+  border-radius: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+
 .navbar a {
   text-decoration: none;
   color: #fefefe;
@@ -247,6 +260,7 @@ canvas {
   overflow: hidden;
   transition: 0.5s;
   border: 5px solid white;
+  color: white;
 }
 .col2:hover{
   background-color: rgb(255, 255, 255);
