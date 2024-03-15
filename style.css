@@ -119,7 +119,7 @@ canvas {
   margin-right: 15px;
 }
 
-.op{
+.op {
   border-radius: 30%;
   background-color: #0947b3;
   display: inline-block;
@@ -127,9 +127,15 @@ canvas {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  color: #ffffff; /* Choose your preferred text color */
+  color: #ffffff;
+  /* Choose your preferred text color */
   border-radius: 15px;
   transition: background-color 0.3s ease-in-out;
+}
+
+.op:hover {
+  background-color: #1173c4;
+  /* Choose a darker shade for hover effect */
 }
 
 .navbar a {
@@ -186,40 +192,48 @@ canvas {
 }
 
 /* Media Query for smaller screens */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .grid {
-    flex-direction: column; /* Stack columns on smaller screens */
+    flex-direction: column;
+    /* Stack columns on smaller screens */
   }
 
   .g-col-6 {
-    max-width: 100%; /* Full width for columns on smaller screens */
+    max-width: 100%;
+    /* Full width for columns on smaller screens */
   }
 
   .pt {
-    margin-top: 20px; /* Adjust margin for spacing on smaller screens */
+    margin-top: 20px;
+
   }
 
   .navbar {
-    margin-right: 20px; /* Adjust margin for spacing on smaller screens */
+    margin-right: 20px;
+    /* Adjust margin for spacing on smaller screens */
   }
 
   .head {
-    font-size: medium; /* Adjust font size for smaller screens */
+    font-size: medium;
+    /* Adjust font size for smaller screens */
   }
 
   #explore1 {
-    padding: 8px; /* Adjust padding for smaller screens */
+    padding: 8px;
+    /* Adjust padding for smaller screens */
   }
 }
+
 /* poster */
 
 
 @keyframes slideLeft {
   from {
-      transform: translateX(-100%); /* Start off-screen to the left */
+    transform: translateX(-100%);
   }
+
   to {
-      transform: translateX(0); /* Move to the original position */
+    transform: translateX(0);
   }
 }
 
@@ -235,7 +249,8 @@ canvas {
 .container-md {
   max-width: 100%;
 }
-#twop{
+
+#twop {
   font-family: sans-serif;
 }
 
@@ -262,7 +277,8 @@ canvas {
   border: 5px solid white;
   color: white;
 }
-.col2:hover{
+
+.col2:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(11, 11, 11);
   border: 5px solid #0947b3;
@@ -278,9 +294,10 @@ canvas {
   color: rgb(0, 0, 0);
 }
 
-#one{
+#one {
   text-align: left;
 }
+
 .eb {
   /* width: 100%; */
   border-radius: 15%;
@@ -291,8 +308,9 @@ canvas {
   color: black;
   background-color: rgb(255, 255, 255);
 }
-#ec{
-  width:123px;
+
+#ec {
+  width: 123px;
   border-radius: 15%;
   border: 2px solid balck;
   padding: 6px;
@@ -300,44 +318,47 @@ canvas {
   margin: 5px;
   background-color: rgb(255, 255, 255);
 }
-.eb:hover{
+
+.eb:hover {
   background-color: black;
   color: white;
   border: 2px solid #0947b3;
 }
-#ec:hover{
+
+#ec:hover {
   background-color: #0947b3;
   color: white;
 }
 
 /* other ai button hover */
-        
-        .otherbutton {
-          display: inline-block;
-          padding: 10px 20px;
-          font-size: 16px;
-          text-align: center;
-          text-decoration: none;
-          cursor: pointer;
-          outline: none;
-          border: none;
-          border-radius: 5px;
-          color: #fff;
-          background-color: #007BFF;
-          transition: background-color 0.3s ease;
-          align-items: center;
-      }
-      .otherbutton:hover {
-        background-color: #011e3c;
-    }
+
+.otherbutton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #007BFF;
+  transition: background-color 0.3s ease;
+  align-items: center;
+}
+
+.otherbutton:hover {
+  background-color: #011e3c;
+}
 
 
 
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .col {
-    flex: 0 0 48%; 
+    flex: 0 0 100%;
   }
 }
 
@@ -350,105 +371,126 @@ canvas {
 
 
 
-hr{
+hr {
   border: 4px solid;
   color: #ffffff;
-}
+} 
 /* footer */
-.footer{
+.footer {
   background: black;
   color: white;
   font-size: 14px;
   padding: 60px 0 20px;
 }
-.footer p{
+
+.footer p {
   color: white;
 }
-.footer h3{
+
+.footer h3 {
   color: white;
   margin-bottom: 20px;
 }
-.footer-col-1 , .footer-col-2 , .footer-col-3 , .footer-col-4 {
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
   min-width: 250px;
   margin-bottom: 20px;
 }
-.footer-col-1{
+
+.footer-col-1 {
   flex-basis: 30%;
 }
-.footer-col-2{
-  flex : 1;
+
+.footer-col-2 {
+  flex: 1;
   text-align: center;
 }
-.footer-col-2 img{
+
+.footer-col-2 img {
   width: 180px;
   margin-bottom: 20px;
 }
-.footer-col-3 , .footer-col-4 {
+
+.footer-col-3,
+.footer-col-4 {
   flex-basis: 12%;
   text-align: center;
 }
+
 ul {
   list-style-type: none;
 }
-.app-logo{
+
+.app-logo {
   margin-top: 20px;
 }
-.app-logo img{
+
+.app-logo img {
   width: 140px;
 }
+
 .footer hr {
   border: none;
   background: black;
   height: 1px;
   margin: 20px 0;
 }
-.copyright{
+
+.copyright {
   text-align: center;
 }
-.menu-icon{
+
+.menu-icon {
   width: 28px;
   margin-left: 20px;
-  display:none ;
+  display: none;
 }
-.rowk{
+
+.rowk {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.containerz{
+
+.containerz {
   max-width: 1300px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
 }
-hr{
+
+hr {
   color: #41a3d4;
 }
 
 
 /* sugesstions */
-.su{
+.su {
   /* display: flex; */
   justify-items: center;
-  background-color:#0947b3 ;
+  background-color: #0947b3;
   border: 5px solid white;
 }
 
-.container{
+.container {
   max-width: 80%;
   padding: 34px;
   margin: auto;
 }
 
-.container h1  {
+.container h1 {
   font-size: 40px;
   text-align: center;
   font-family: "Sriracha", cursive;
   font-weight: 400;
   font-style: normal;
 }
-p{
+
+p {
   font-size: 17px;
   text-align: center;
   font-family: "Sriracha", cursive;
@@ -456,7 +498,8 @@ p{
   font-style: normal;
 }
 
-input , textarea{
+input,
+textarea {
   width: 80%;
   margin: 11px auto;
   border: 2px solid black;
@@ -465,14 +508,15 @@ input , textarea{
   outline: none;
   padding: 7px;
 }
-form{
+
+form {
   display: flex;
-  align-items:center ;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.btn{
+.btn {
   color: black;
   background-color: white;
   padding: 8px 12px;
@@ -482,22 +526,24 @@ form{
   cursor: pointer;
 }
 
-.bg{
+.bg {
   width: 100%;
   position: absolute;
   z-index: -1;
   opacity: 0.6;
 }
 
-.Submitmsg{
+.Submitmsg {
   color: green;
   font-size: 25px;
 }
-.at{
+
+.at {
   background-color: #555;
   margin: 10px;
 }
-.aitools{
+
+.aitools {
   background-color: #000000;
   margin-top: 100px;
   color: black;
@@ -537,23 +583,25 @@ form{
   display: block;
   margin: 0 auto;
 }
-.pt{
+
+.pt {
   position: relative;
-  margin-top: 710px;
+  margin-top: 700px;
 }
+
 
 .g-col-6:nth-child(2) {
   padding: 20px;
-  box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.navigtext{
+.navigtext {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
- 
+
 
 /* dropdown from chatgpt */
 /* styles.css */
@@ -567,7 +615,8 @@ body {
 .dropdown-container {
   position: relative;
   display: inline-block;
-  width: 100%; /* Make the container full width */
+  width: 100%;
+  /* Make the container full width */
 }
 
 #dropdown-btn {
@@ -576,18 +625,21 @@ body {
   padding: 10px;
   border: none;
   cursor: pointer;
-  width: 100%; /* Make the button full width */
+  width: 100%;
+  /* Make the button full width */
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
-  width: 100%; /* Make the dropdown content full width */
+  width: 100%;
+  /* Make the dropdown content full width */
   background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  animation: slideDown 0.5s ease-out; /* Animation duration and timing function */
+  animation: slideDown 0.5s ease-out;
+  /* Animation duration and timing function */
 }
 
 .dropdown-content a {
@@ -607,6 +659,7 @@ body {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -621,7 +674,8 @@ body {
 .accordion {
   display: flex;
   flex-direction: column;
-  max-width: 1000px; /* Adjust the max-width to make the dropdown wider */
+  max-width: 1000px;
+  /* Adjust the max-width to make the dropdown wider */
   margin: auto;
 }
 
@@ -647,18 +701,19 @@ body {
   border: 1px solid white;
 }
 
-#otherpageh2{
+#otherpageh2 {
   align-content: center;
   justify-content: center;
   color: white;
   margin: 40px 0;
-  
+
   border: 5px solid white;
 }
 
 .col3c {
   background: linear-gradient(90deg, #000, #fff, #000);
-  color: transparent; /* Set text color to transparent */
+  color: transparent;
+  /* Set text color to transparent */
   -webkit-background-clip: text;
   background-repeat: no-repeat;
   background-size: 80%;
@@ -670,6 +725,7 @@ body {
   0% {
     background-position: -500%;
   }
+
   100% {
     background-position: 500%;
   }

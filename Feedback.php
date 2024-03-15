@@ -54,6 +54,7 @@ if (isset($_POST['name'])) {
     .bn {
         height: 100vh; 
         width: 100%; 
+        margin-bottom : 30px;
     }
     h1{
         color: white;

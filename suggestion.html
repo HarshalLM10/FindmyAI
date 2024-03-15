@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,28 @@
             background-color: black;
             color: white;
         }
-        .box{
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            background: black;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            position: absolute;
+            border: 5px solid white;
+        }
+
+        .sugge {
+            position: relative;
+            z-index: 2;
+            margin: 0 25%;
+        }
+
+        .box {
             background-color: #0947b3;
-            width: 600px;
+            max-width: 600px;
             margin: auto;
             padding: 10px;
             border: 5px solid white;
@@ -34,23 +54,12 @@
             margin-bottom: 8px;
         }
 
-        input, textarea {
+        input,
+        textarea {
             width: 100%;
             padding: 8px;
             margin-bottom: 16px;
             box-sizing: border-box;
-        }
-        .sugge{
-            position: absolute;
-            z-index: 2;
-            margin: 0 25% ;
-        }
-        .sugg{
-            border: 5px solid white;
-            width: 610px;
-            margin: auto;
-            margin-bottom: 20px;
-            margin-top: 40px;
         }
 
         textarea {
@@ -70,31 +79,38 @@
         button:hover {
             background-color: #45a049;
         }
+
+        @media only screen and (max-width: 768px) {
+            .box {
+                width: 90%;
+            }
+        }
     </style>
 </head>
+
 <body>
     <canvas id="c"></canvas>
     <div class="sugge">
-     <div class="sugg"><h1>Suggestion Box</h1></div>
-    
-    <div class="box">
-    <form action="#" method="post" id="suggestionForm">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
+        <div class="sugg">
+            <h1>Suggestion Box</h1>
+        </div>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
+        <div class="box">
+            <form action="#" method="post" id="suggestionForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
-        <label for="suggestion">Your Suggestion:</label>
-        <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
 
-        <button type="submit" class="eb">Submit Suggestion</button>
-    </form>
-</div>
-</div>
+                <label for="suggestion">Your Suggestion:</label>
+                <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
 
+                <button type="submit" class="eb">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
 
-    
 
     <script>
         // You can add JavaScript for form submission handling or any other functionality here
@@ -105,55 +121,53 @@
         });
     </script>
     <script>
-        (function () {
-          var c = document.getElementById("c"),
-            ctx = c.getContext("2d");
-    
-          c.width = innerWidth;
-          c.height = innerHeight;
-    
-          var lines = [],
-            maxSpeed = 0,
-            spacing = 5,
-            xSpacing = 0,
-            n = innerWidth / spacing,
-            colors = ["#0947b3", "6a96e2", "white", "grey"],
-            i;
-    
-          for (i = 0; i < n; i++) {
-            xSpacing += spacing;
-            lines.push({
-              x: xSpacing,
-              y: Math.round(Math.random() * c.height),
-              width: 2,
-              height: Math.round(Math.random() * (innerHeight / 10)),
-              speed: Math.random() * maxSpeed + 1,
-              color: colors[Math.floor(Math.random() * colors.length)]
-            });
-          }
-    
-          function draw() {
-            var i;
-            ctx.clearRect(0, 0, c.width, c.height);
-    
+        (function() {
+            var c = document.getElementById("c"),
+                ctx = c.getContext("2d");
+
+            c.width = innerWidth;
+            c.height = innerHeight;
+
+            var lines = [],
+                maxSpeed = 0,
+                spacing = 5,
+                xSpacing = 0,
+                n = innerWidth / spacing,
+                colors = ["#0947b3", "6a96e2", "white", "grey"],
+                i;
+
             for (i = 0; i < n; i++) {
-              ctx.fillStyle = lines[i].color;
-              ctx.fillRect(lines[i].x, lines[i].y, lines[i].width, lines[i].height);
-              lines[i].y += lines[i].speed;
-    
-              if (lines[i].y > c.height)
-                lines[i].y = 0 - lines[i].height;
+                xSpacing += spacing;
+                lines.push({
+                    x: xSpacing,
+                    y: Math.round(Math.random() * c.height),
+                    width: 2,
+                    height: Math.round(Math.random() * (innerHeight / 10)),
+                    speed: Math.random() * maxSpeed + 1,
+                    color: colors[Math.floor(Math.random() * colors.length)]
+                });
             }
-    
-            requestAnimationFrame(draw);
-          }
-    
-          draw();
+
+            function draw() {
+                var i;
+                ctx.clearRect(0, 0, c.width, c.height);
+
+                for (i = 0; i < n; i++) {
+                    ctx.fillStyle = lines[i].color;
+                    ctx.fillRect(lines[i].x, lines[i].y, lines[i].width, lines[i].height);
+                    lines[i].y += lines[i].speed;
+
+                    if (lines[i].y > c.height)
+                        lines[i].y = 0 - lines[i].height;
+                }
+
+                requestAnimationFrame(draw);
+            }
+
+            draw();
         }());
-    
-    
-    
-      </script>
+    </script>
 
 </body>
+
 </html>
