@@ -8,8 +8,8 @@
     <title>Suggestion Box</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family:  sans-serif;
+            margin: 80px 20px 20px 20px; /* Added 50px margin to the top */
             background-color: black;
             color: white;
         }
@@ -30,18 +30,23 @@
             position: relative;
             z-index: 2;
             margin: 0 25%;
+            margin-top: 30px;
         }
 
         .box {
-            background-color: #0947b3;
+            background-color: #3b6bbd25;
             max-width: 600px;
             margin: auto;
             padding: 10px;
             border: 5px solid white;
+            border-radius: 25px;
+            border: none;
+            height: 500px;
         }
 
         h1 {
             text-align: center;
+            
         }
 
         form {
@@ -71,7 +76,7 @@
             color: white;
             padding: 10px 20px;
             border: none;
-            border-radius: 4px;
+            border-radius: 30px;
             cursor: pointer;
             font-size: 16px;
         }
@@ -92,7 +97,7 @@
     <canvas id="c"></canvas>
     <div class="sugge">
         <div class="sugg">
-            <h1>Suggestion Box</h1>
+            <h1><b>Suggestion Box</b></h1>
         </div>
 
         <div class="box">

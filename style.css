@@ -267,7 +267,7 @@ canvas {
 }
 
 .col2 {
-  background-color: #0947b3;
+  background-color: #0947b357;
   margin: 10px;
   transition-duration: 0.5s;
   border-radius: 10px;
@@ -281,7 +281,7 @@ canvas {
 .col2:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(11, 11, 11);
-  border: 5px solid #0947b3;
+  border: 5px solid #0947b357;
 }
 
 .col2 img {
@@ -684,7 +684,7 @@ body {
 }
 
 .accordion-header {
-  background-color: #0947b3;
+  background-color: #0947b357;
   padding: 10px;
   cursor: pointer;
   display: flex;
